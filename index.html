@@ -1,88 +1,64 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>All About Me</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">     
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About Me — Stylish</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <ul class="headerlinks">
-            <li>
-                <i class="fas fa-code"></i>
-                <div>About Me</div>
-            </li>
-            <li>
-                <a href="https://github.com/jkusa-jr" >
-                    <i class="fab fa-github"></i>
-                <div>jkusa-jr</div>
-                </a>
-                
-            </li>
-        </ul>
+  <main class="page">
+    <header class="topbar">
+      <div class="brand">Your Name</div>
+      <div class="controls">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">🌓</button>
+      </div>
     </header>
-    <main>
-        <h1>Hello World!</h1>
-        <h2>These are some of my Cardboard Inventions:</h2>
-        <div class="pictures">
-            <img src="assets/fridge.png" width="300px">
-            <img src="assets/oven.png" width="300px">
-            <img src="assets/microwave.png" width="300px">
-            <h3>I made like 23 more so I have a closet full of them.</h3>
+
+    <section class="card">
+      <div class="avatar">
+        <img src="avatar.jpg" alt="Avatar">
+      </div>
+
+      <div class="content">
+        <h1 class="name"><span class="accent">Hi,</span> I'm Your Name</h1>
+        <p class="tagline">Product-focused developer who builds delightful experiences — JS, Go, and accessible design.</p>
+
+        <div class="meta">
+          <div class="info">
+            <strong>Location</strong>
+            <span>City, Country</span>
+          </div>
+          <div class="info">
+            <strong>Works at</strong>
+            <span>Acme Corp</span>
+          </div>
         </div>
-        <h2>I also like to read garfield comics. Here is one below:</h2>
-        <blockquote class="twitter-tweet"><p lang="und" dir="ltr"><a href="https://twitter.com/hashtag/psl?src=hash&amp;ref_src=twsrc%5Etfw">#psl</a> <a href="https://t.co/VT3jyr2T0u">pic.twitter.com/VT3jyr2T0u</a></p>&mdash; Garfield (@Garfield) <a href="https://twitter.com/Garfield/status/1302676361094615041?ref_src=twsrc%5Etfw">September 6, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        <h2>My Dad also has a Github account</h2>
-        <h3>Here is a link to my <a id="gh-link" href="https://github.com/jkusa" target=”_blank" rel="noopener noreferrer">Dad's Github account</a> </h3>
-        <h3>here are some other things I like:</h3>
-        <h3>Star Wars, Legos, code, Disney, and video games</h3>
-        <h3>I also like classic Nintendo Consoles:</h3>
-        <h3>The NES, SNES, 64, and Game Cube.</h3>
-        <h3>Here is a link to my <a id="gh-link" href="https://scratch.mit.edu/users/jkusajr/" target=”_blank" rel="noopener noreferrer">Scratch account</a></h3>
-        <h3>I also lke blankets</h3>
-        <h3>Here is a list of my favorite video games: (not nesesarily in order)</h3>
-        <ul>
-            <li>The Legend of Zelda: Breath of the Wild</li>
-            <li>Minecraft</li>
-            <li>Bad Piggies</li>
-            <li>The Legend of Zelda: The Wind Waker</li>
-        </ul>
-        
-        <h3>Here is a list of my favorite movies: (in no specific order)</h3>
-        <ul>
-            <li>Wall•E</li>
-            <li>Spies in Disguise</li>
-            <li>The LEGO Movie</li>
-            <li>Any Star Wars Movie</li>
-        </ul>
 
-        <h3>Here is a list of my favorite shows: (Not in order)</h3>
-        <ul>
-            <li>The Owl House</li>
-            <li>Amphibia</li>
-            <li>Big City Greens</li>
-            <li>Hamster and Gretal</li>
-        </ul>
+        <div class="skills">
+          <span class="skill">JavaScript</span>
+          <span class="skill">React</span>
+          <span class="skill">Go</span>
+          <span class="skill">Accessibility</span>
+          <span class="skill">Design</span>
+        </div>
 
-        <h3>Here is a list of my favorite foods: (Not at all in order)</h3>
-        <ul>
-            <li>Pizza</li>
-            <li>Pretzal Chips</li>
-            <li>Cherrios</li>
-            <li>Hot Dogs</li>
-        </ul>
+        <div class="actions">
+          <a class="btn primary" href="#contact">Contact</a>
+          <a class="btn ghost" href="#projects">Projects</a>
+        </div>
+      </div>
+    </section>
 
-    </main>
+    <footer class="foot">
+      <small>Made with <span class="heart">❤</span> • <a href="https://github.com/yourname">GitHub</a></small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
